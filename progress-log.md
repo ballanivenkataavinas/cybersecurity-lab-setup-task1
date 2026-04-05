@@ -113,6 +113,62 @@ Day 3 – Linux Fundamentals & Essential Commands
    -- Most security tools run on Linux (especially Kali Linux)  
    -- Faster command-line operations compared to GUI  
    -- Better control over system and processes  
-
 -- Practiced commands in Kali Linux terminal to build familiarity  
+
+ Day 4 – Network Scanning with Nmap (Reconnaissance Phase)
+
+-- Learned about the importance of Reconnaissance (information gathering) in cybersecurity  
+   -- First step in ethical hacking before any attack  
+   -- Helps identify open ports, running services, and potential vulnerabilities  
+
+-- Understood how networks communicate using:
+   -- IP Address → Identifies devices on network  
+   -- Ports → Entry points for services (e.g., 80 = HTTP, 22 = SSH)  
+   -- Protocols → Rules for communication (TCP/UDP)  
+
+-- Explored and used **:contentReference[oaicite:0]{index=0}** (Network Mapper):
+   -- A powerful tool used to scan networks and discover hosts/services  
+
+-- Performed practical scanning on Metasploitable2 from Kali Linux:
+
+Basic Scan
+-- Command:
+   nmap 192.168.x.x  
+   -- Checks if host is alive  
+   -- Lists open ports  
+
+Service Version Detection
+-- Command:
+   nmap -sV 192.168.x.x  
+   -- Detects services running on open ports  
+   -- Example:
+      -- Port 21 → FTP  
+      -- Port 22 → SSH  
+      -- Port 80 → HTTP  
+Aggressive Scan
+-- Command:
+   nmap -A 192.168.x.x  
+   -- Detect OS details  
+   -- Version detection  
+   -- Script scanning  
+   -- Traceroute  
+Common Ports Observed
+-- 21 → FTP (File Transfer)  
+-- 22 → SSH (Remote Login)  
+-- 23 → Telnet (Insecure remote access)  
+-- 25 → SMTP (Email service)  
+-- 80 → HTTP (Web server)  
+-- 139/445 → SMB (Windows file sharing)  
+
+-- Learned that open ports can be potential entry points for attackers if not secured properly  
+-- Understood difference between:
+   -- Open Port → Service is running and accessible  
+   -- Closed Port → No service running  
+   -- Filtered Port → Blocked by firewall  
+-- Practiced scanning multiple times to understand output clearly  
+-- Learned how attackers use scanning to:
+   -- Map network structure  
+   -- Identify weak services  
+   -- Plan attacks  
+--- Performed scans only in controlled lab environment (ethical practice)  
 
