@@ -314,4 +314,77 @@ Security Insights
    -- SQL Injection  
    -- Authentication bypass  
 -- Intercepting requests helps identify vulnerabilities  
- 
+
+##  Day 7 –- Network Communication using Netcat (Backdoor Basics)
+
+-- Learned about basic network communication and how attackers establish connections between systems  
+
+ Understanding Netcat
+
+-- Netcat can act as:
+   -- Server (Listener)  
+   -- Client (Connector)  
+
+-- Helps in:
+   -- Sending/receiving data  
+   -- Opening ports  
+   -- Creating reverse connections  
+
+ Practical Activity – Listener Setup (Kali)
+
+-- Opened terminal in Kali Linux  
+
+-- Started listener:
+
+   nc -lvnp 4444  
+
+-- Breakdown:
+   -- l → listen mode  
+   -- v → verbose output  
+   -- n → no DNS resolution  
+   -- p → port number  
+
+-- Kali is now waiting for incoming connection  
+
+ Connecting from Target (Metasploitable2)
+
+-- Opened terminal in Metasploitable2  
+
+-- Ran command:
+
+   nc <Kali-IP> 4444  
+
+-- This establishes connection from target → attacker  
+
+ Result
+
+-- Connection successfully established  
+-- Able to send messages between both machines  
+
+Example:
+   -- Typed message in Kali → visible in Metasploitable  
+   -- Typed message in Metasploitable → visible in Kali  
+
+Security Understanding
+
+-- This demonstrates how attackers can:
+   -- Open a port and wait for connection  
+   -- Gain remote communication access  
+   -- Create simple backdoor channels  
+
+Defensive Insight
+
+-- Such connections can be detected using:
+   -- Firewall rules  
+   -- Intrusion Detection Systems (IDS)  
+   -- Network monitoring tools  
+
+Important Concept
+
+-- Difference between:
+
+   -- Bind Shell:
+      Target opens port → attacker connects  
+
+   -- Reverse Shell:
+      Target connects back to attacker (bypasses firewall) 
