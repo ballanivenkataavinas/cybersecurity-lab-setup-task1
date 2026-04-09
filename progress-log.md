@@ -315,7 +315,7 @@ Security Insights
    -- Authentication bypass  
 -- Intercepting requests helps identify vulnerabilities  
 
-##  Day 7 –- Network Communication using Netcat (Backdoor Basics)
+# Day 7 –- Network Communication using Netcat (Backdoor Basics)
 
 -- Learned about basic network communication and how attackers establish connections between systems  
 
@@ -388,3 +388,76 @@ Important Concept
 
    -- Reverse Shell:
       Target connects back to attacker (bypasses firewall) 
+
+  # Day 8 –- Cryptography Basics (Encryption & Hashing)
+
+-- Learned about Cryptography and its role in securing data  
+   -- Protects sensitive information from unauthorized access  
+   -- Used in passwords, secure communication, banking, etc.  
+
+Types of Cryptography
+
+-- Symmetric Encryption:
+   -- Same key used for encryption and decryption  
+   -- Faster but key sharing is risky  
+
+-- Asymmetric Encryption:
+   -- Uses two keys:
+      -- Public Key (for encryption)  
+      -- Private Key (for decryption)  
+   -- More secure but slower  
+   
+ Hashing
+-- Hashing converts data into fixed-length string  
+-- Important properties:
+   -- One-way function (cannot reverse)  
+   -- Same input → same hash  
+   -- Small change → completely different hash  
+
+-- Common algorithms:
+   -- MD5  
+   -- SHA256  
+
+Digital Certificates & SSL/TLS
+
+-- SSL/TLS ensures secure communication over internet  
+-- Used in HTTPS websites  
+
+-- Provides:
+   -- Encryption  
+   -- Data integrity  
+   -- Authentication  
+
+Encrypt a Message
+
+-- Command:
+
+   echo "hello123" | openssl enc -aes-256-cbc -base64  
+
+-- Output:
+   -- Encrypted text (unreadable format)  
+
+Decrypt the Message
+
+-- Command:
+
+   echo "encrypted_text" | openssl enc -aes-256-cbc -d -base64  
+
+-- Output:
+   -- Original message restored  
+
+Generate Hash (SHA256)
+
+-- Command:
+
+   echo -n "hello123" | openssl dgst -sha256  
+
+-- Output:
+   -- Fixed-length hash value  
+
+Security Insights
+
+-- Encryption protects data during transmission  
+-- Hashing protects passwords in databases  
+-- Weak algorithms can be broken by attackers  
+
