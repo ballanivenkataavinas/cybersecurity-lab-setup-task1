@@ -461,3 +461,85 @@ Security Insights
 -- Hashing protects passwords in databases  
 -- Weak algorithms can be broken by attackers  
 
+# Day 9 –- Networking Fundamentals (OSI Model & TCP/IP)
+
+-- Learned about the importance of networking in cybersecurity  
+   -- All attacks and defenses happen over networks  
+   -- Understanding communication is essential for detecting threats  
+
+OSI Model (7 Layers)
+
+-- Application Layer (Layer 7):
+   -- User interaction (HTTP, FTP, DNS)  
+
+-- Presentation Layer (Layer 6):
+   -- Data encryption and formatting  
+
+-- Session Layer (Layer 5):
+   -- Manages sessions between systems  
+
+-- Transport Layer (Layer 4):
+   -- Ensures reliable delivery (TCP/UDP)  
+
+-- Network Layer (Layer 3):
+   -- Handles IP addressing and routing  
+
+-- Data Link Layer (Layer 2):
+   -- MAC addressing and frame transmission  
+
+-- Physical Layer (Layer 1):
+   -- Hardware and cables  
+
+TCP/IP Model (Practical Model)
+
+-- Application Layer  
+-- Transport Layer  
+-- Internet Layer  
+-- Network Access Layer  
+
+-- Learned that TCP/IP is used in real-world networks  
+
+Important Protocols
+
+-- TCP (Transmission Control Protocol):
+   -- Reliable, connection-based  
+
+-- UDP (User Datagram Protocol):
+   -- Faster, no guarantee of delivery  
+
+ DNS (Domain Name System)
+
+-- Converts domain names to IP addresses  
+
+Example:
+   google.com → 142.x.x.x  
+
+-- Without DNS, we would use IPs instead of domain names  
+
+HTTP vs HTTPS
+
+-- HTTP:
+   -- Not secure  
+   -- Data transmitted in plain text  
+
+-- HTTPS:
+   -- Secure (uses encryption)  
+   -- Uses SSL/TLS  
+   
+Practical Commands in Kali Linux
+-- Check IP address:
+      ifconfig  
+      
+-- Test connectivity:
+   ping 192.168.x.x  
+
+-- Trace route:
+ traceroute 192.168.x.x  
+
+-- View network connections:
+       netstat -tuln  
+   
+Security Insights
+-- Unsecured protocols (HTTP, Telnet) can expose sensitive data  
+-- Attackers can exploit weak network configurations  
+-- Understanding protocols helps detect abnormal traffic  
