@@ -544,7 +544,7 @@ Security Insights
 -- Attackers can exploit weak network configurations  
 -- Understanding protocols helps detect abnormal traffic  
 
-# Days 10-12 –- Linux Mastery & Final Lab Completion
+# Days 10-12 -- Linux Mastery & Final Lab Completion
 
 -- Focused on strengthening Linux command-line skills and completing final lab requirements  
 Linux Fundamentals & File System
