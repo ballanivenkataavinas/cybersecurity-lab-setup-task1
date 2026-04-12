@@ -560,7 +560,7 @@ Linux Fundamentals & File System
    -- rm file.txt → delete file  
    -- rm -r test_folder → delete directory  
 
-# File Viewing & Editing
+File Viewing & Editing
 
 -- Viewed file content:
    -- cat file.txt  
