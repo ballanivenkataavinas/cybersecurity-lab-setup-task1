@@ -543,3 +543,102 @@ Security Insights
 -- Unsecured protocols (HTTP, Telnet) can expose sensitive data  
 -- Attackers can exploit weak network configurations  
 -- Understanding protocols helps detect abnormal traffic  
+
+# Days 10–12 –- Linux Mastery & Final Lab Completion
+
+-- Focused on strengthening Linux command-line skills and completing final lab requirements  
+Linux Fundamentals & File System
+
+-- Practiced basic navigation commands:
+   -- pwd → shows current directory  
+   -- ls → lists files and directories  
+   -- cd → change directory  
+
+-- Managed files and directories:
+   -- mkdir test_folder → create directory  
+   -- touch file.txt → create file  
+   -- rm file.txt → delete file  
+   -- rm -r test_folder → delete directory  
+
+# File Viewing & Editing
+
+-- Viewed file content:
+   -- cat file.txt  
+
+-- Edited files:
+   -- nano file.txt  
+   
+ File Permissions & Security
+
+-- Learned permission types:
+   -- Read (r), Write (w), Execute (x)  
+
+-- Modified permissions:
+   -- chmod 755 file.txt  
+
+-- Changed ownership:
+   -- chown user:user file.txt  
+
+-- Understood importance of permissions in securing systems  
+
+ Package Management
+
+-- Updated system packages:
+   -- sudo apt update  
+
+-- Installed tools:
+   -- sudo apt install <package-name>  
+
+ Advanced Linux Commands
+
+-- Searched files:
+   -- find / -name file.txt  
+   -- grep "text" file.txt  
+
+-- Monitored system:
+   -- ps aux → running processes  
+   -- top → real-time monitoring  
+
+Archiving & Compression
+
+-- Created archive:
+   -- tar -cvf archive.tar file.txt  
+
+-- Extracted archive:
+   -- tar -xvf archive.tar  
+
+ Networking Practice
+
+-- Checked IP address:
+   -- ifconfig  
+
+-- Tested connectivity:
+   -- ping 192.168.x.x  
+
+-- Viewed network connections:
+   -- netstat -tuln  
+
+Command Efficiency
+
+-- Used shortcuts:
+   -- Tab → auto-complete  
+   -- ↑ → previous commands  
+
+
+ Final Lab Completion
+
+-- Successfully completed cybersecurity lab setup  
+-- Verified communication between Kali Linux and Metasploitable2  
+-- Practiced tools:
+   -- Nmap (network scanning)  
+   -- Wireshark (packet analysis)  
+   -- Burp Suite (web testing)  
+   -- Netcat (network communication)  
+   
+ Deliverables Completed
+
+-- GitHub repository with daily progress notes  
+-- Linux cheat-sheet documentation  
+-- Screenshots of lab setup and tool usage  
+-- 5-minute video walkthrough of lab environment  
+ 
